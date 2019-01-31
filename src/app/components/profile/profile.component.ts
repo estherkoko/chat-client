@@ -17,7 +17,7 @@ import 'rxjs/add/operator/catch';
 
 export class ProfileComponent implements OnInit {
   user:Object;
-  constructor(private authService: AuthService, private router: Router, public chatService: ChatService, public http: HttpClient) { }
+  constructor(public authService: AuthService, private router: Router, public chatService: ChatService, public http: HttpClient) { }
 
   ngOnInit() {
     this.authService.getProfile().subscribe(profile =>{

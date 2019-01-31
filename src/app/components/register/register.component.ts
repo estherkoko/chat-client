@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   email: String;
   password : String;
   constructor(private validateService: ValidateService, private flashMessage: FlashMessagesService, 
-    private authService: AuthService, private router : Router) { }
+    public authService: AuthService, private router : Router) { }
 
   ngOnInit() {
   }

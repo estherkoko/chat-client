@@ -31,7 +31,7 @@ export class UserDetailsComponent implements OnInit {
   private socket;
 
   constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient,
-    private chatService: ChatService, private authService: AuthService) {
+    private chatService: ChatService, public authService: AuthService) {
     this.socket = socketio('http://localhost:3000');
     this.created_date = new Date();
       //push message from server to client

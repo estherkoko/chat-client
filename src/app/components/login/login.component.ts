@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   username: String;
   password: String;
 
-  constructor(private authService: AuthService,
+  constructor(public authService: AuthService,
               private router: Router,
               private flashMessage: FlashMessagesService) { }
 
